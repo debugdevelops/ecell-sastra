@@ -1,0 +1,21 @@
+.landing-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15vh 0 15vh 0;
+  background-color: var(--black);
+  font-family: Helvetica;
+}
+
+.landing-page > h2 {
+  color: var(--white);
+  font-size: 30px;
+  letter-spacing: 10px;
+}
+
+.events {
+  padding: 10vh 0 10vh 0;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}

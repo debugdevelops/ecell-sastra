@@ -1,0 +1,166 @@
+.footer {
+  background-color: var(--black);
+}
+
+.bottom {
+  color: white;
+  font-family: SegoeUI;
+  font-size: 25px;
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom > h2 {
+  font-size: 20px;
+}
+
+.bottom > h1 {
+  font-size: 40px;
+}
+
+.developers {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  flex-wrap: wrap;
+}
+
+.developer {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  font-size: 25px;
+  align-items: center;
+}
+
+.developer-contact {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100px;
+  margin-bottom: 40px;
+}
+
+.social > img {
+  margin-right: 30px;
+}
+
+.top {
+  padding: 5vh 15vw 5vh 15vw;
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+}
+
+.address,
+.contact,
+.links {
+  margin-bottom: 5vh;
+}
+
+.address > h2 {
+  font-family: SegoeUI;
+  font-size: 30px;
+  position: relative;
+}
+
+.address > h2::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -50px;
+  height: 35px;
+  width: 35px;
+  background-image: url("../../assets/icons/ecell.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.address > p {
+  font-family: SegoeUI;
+  font-size: 25px;
+  color: var(--grey);
+}
+
+.address > h2 {
+  font-family: SegoeUI;
+  font-size: 30px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  text-decoration: none !important;
+  font-family: SegoeUI;
+  font-size: 20px;
+  color: var(--white) !important;
+  line-height: 35px;
+}
+
+.contact > p {
+  font-family: SegoeUI;
+  font-size: 30px;
+  color: #d4d4d4;
+  margin-bottom: 30px;
+}
+
+.email > input[type="text"] {
+  border: none;
+  background: transparent;
+  outline: none;
+  border-bottom: 2px solid #8a8a8a;
+  caret-color: #8a8a8a;
+  font-family: SegoeUI;
+  font-size: 20px;
+  color: #8a8a8a;
+  box-shadow: none;
+}
+
+.email {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.email > label {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  font-family: SegoeUI;
+  font-size: 20px;
+  color: #8a8a8a;
+  pointer-events: none;
+  transition: transform 0.1s ease-out, font-size 0.1s ease-out;
+}
+
+.email > input[type="text"]:focus + label {
+  font-size: 15px;
+  transform: translateY(-20px);
+}
+
+.email > input[type="text"]:valid + label {
+  font-size: 15px;
+  transform: translateY(-20px);
+}
+
+.button {
+  color: var(--white) !important;
+}
+
+@media (max-width: 1000px) {
+  .contact,
+  .links,
+  .address {
+    margin-right: 30%;
+  }
+  .address > h2::before {
+    content: none;
+  }
+}

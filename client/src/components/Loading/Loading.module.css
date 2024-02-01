@@ -1,0 +1,68 @@
+.loading {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.black-box {
+  background-color: black;
+  padding: 1px;
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  margin-bottom: 100px;
+}
+.black-box > img {
+  width: 100px;
+}
+.loading > h2 {
+  font-family: Helvetica;
+  font-size: 2em;
+}
+
+.dot-one,
+.dot-two,
+.dot-three {
+  animation-name: dotanim;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+.dot-two {
+  animation-delay: 0.33s;
+}
+.dot-three {
+  animation-delay: 0.66s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(405deg);
+  }
+  80% {
+    transform: rotate(345deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dotanim {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}

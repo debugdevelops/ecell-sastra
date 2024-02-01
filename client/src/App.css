@@ -1,0 +1,28 @@
+:root {
+  --grey: #beb7b7;
+  --white: #ffffff;
+  --black: #393939;
+  --darker-grey: #585858;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("./fonts/Helvetica.ttf");
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("./fonts/OpenSans.ttf");
+}
+@font-face {
+  font-family: "SegoeUI";
+  src: url("./fonts/SegoeUI.woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}

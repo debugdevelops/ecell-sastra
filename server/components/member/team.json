@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_member_teams",
+  "info": {
+    "name": "Team",
+    "icon": "users"
+  },
+  "options": {},
+  "attributes": {
+    "head": {
+      "type": "component",
+      "repeatable": true,
+      "component": "member.member",
+      "required": true
+    },
+    "members": {
+      "type": "component",
+      "repeatable": true,
+      "component": "member.member",
+      "required": true,
+      "min": 1
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

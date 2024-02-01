@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teams",
+  "info": {
+    "name": "Team"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "chairPerson": {
+      "type": "component",
+      "repeatable": false,
+      "component": "member.member",
+      "required": true
+    },
+    "viceChairPerson": {
+      "type": "component",
+      "repeatable": false,
+      "component": "member.member",
+      "required": true
+    },
+    "coordinator": {
+      "type": "component",
+      "repeatable": true,
+      "component": "member.member",
+      "required": true
+    },
+    "team": {
+      "type": "component",
+      "repeatable": true,
+      "component": "member.team",
+      "required": true
+    },
+    "treasurer": {
+      "type": "component",
+      "repeatable": true,
+      "component": "member.member"
+    }
+  }
+}

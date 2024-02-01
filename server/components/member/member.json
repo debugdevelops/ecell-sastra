@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_member_members",
+  "info": {
+    "name": "member",
+    "icon": "angry"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
